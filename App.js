@@ -51,6 +51,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './/navigation/AppNavigator';
 import NavigatorQuoteApp from './/navigation/NavigatorQuoteApp'
+import NavigatorFitnessTracker from './/navigation/NavigatorFitnessTracker'
 
  function App() {
   return (
@@ -59,9 +60,17 @@ import NavigatorQuoteApp from './/navigation/NavigatorQuoteApp'
     //     <AppNavigator />
     //   </NavigationContainer>
     // </SafeAreaProvider>
-     <SafeAreaProvider>
+
+
+    //  <SafeAreaProvider>
+    //   <NavigationContainer>
+    //     <NavigatorQuoteApp />
+    //   </NavigationContainer>
+    // </SafeAreaProvider>
+
+    <SafeAreaProvider>
       <NavigationContainer>
-        <NavigatorQuoteApp />
+        <NavigatorFitnessTracker />
       </NavigationContainer>
     </SafeAreaProvider>
   );
