@@ -49,9 +49,11 @@
 import React from 'react';
  import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './/navigation/AppNavigator';
-import NavigatorQuoteApp from './/navigation/NavigatorQuoteApp'
-import NavigatorFitnessTracker from './/navigation/NavigatorFitnessTracker'
+// import AppNavigator from './/navigation/AppNavigator';
+// import NavigatorQuoteApp from './/navigation/NavigatorQuoteApp'
+// import NavigatorFitnessTracker from './/navigation/NavigatorFitnessTracker'
+
+import CollegeAlertNavigation from './navigation/CollegeAlertNavigation'
 
  function App() {
   return (
@@ -68,11 +70,19 @@ import NavigatorFitnessTracker from './/navigation/NavigatorFitnessTracker'
     //   </NavigationContainer>
     // </SafeAreaProvider>
 
-    <SafeAreaProvider>
+    // <SafeAreaProvider>
+    //   <NavigationContainer>
+    //     <NavigatorFitnessTracker />
+    //   </NavigationContainer>
+    // </SafeAreaProvider>
+
+    
+     <SafeAreaProvider>
       <NavigationContainer>
-        <NavigatorFitnessTracker />
+        <CollegeAlertNavigation></CollegeAlertNavigation>
       </NavigationContainer>
     </SafeAreaProvider>
+
   );
 }
 export default App;
