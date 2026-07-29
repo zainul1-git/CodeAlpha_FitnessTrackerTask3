@@ -1,4 +1,3 @@
-// src/screens/HomeScreen.js
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { ALERTS_DATA } from '../Data/AlertsData';
